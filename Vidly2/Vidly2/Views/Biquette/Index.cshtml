@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Vidly2.Models.Biquette>
+@{
+    ViewBag.Title = "Biquettes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Model.Nom</h2>
+
+@if (!Model.Any())
+{
+    <p>Aucune biquette de disponible actuellement</p>
+}
+else
+{
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Biquette</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var biquette in Model)
+            {
+                <tr>
+                    
+                    <td>@biquette.Nom</td>
+                </tr>
+            }
+    </table>
+}

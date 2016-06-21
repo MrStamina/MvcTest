@@ -4,21 +4,50 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Vidly2.Models;
+using System.Data.Entity;
+using Vidly2.Views.ViewModels;
 
 namespace Vidly2.Controllers
 {
     public class CustomersController : Controller
     {
         // GET: Customer
+        private ApplicationDbContext _context;
+
+        public CustomersController()
+        {
+            _context = new ApplicationDbContext();
+        }
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose(); 
+        }
         public ViewResult Index()
         {
-            var customers = GetCustomers();
+            var customers = _context.Customers.Include(c => c.MembershipType).ToList();
             return View(customers);
+        }
+        
+        public ActionResult New()
+        {
+            var membershipTypes = _context.MembershipTypes.ToList();
+            var viewModel = new NewCustomerViewModel
+            {
+                MembershipTypes = membershipTypes
+            };
+            return View(viewModel);
+        }
+        [HttpPost]
+        public ActionResult Create(Customer customer)
+        {
+            _context.Customers.Add(customer);
+            _context.SaveChanges();
+            return RedirectToAction("Index", "Customers");
         }
 
         public ActionResult Details(int id)
         {
-            var customer = GetCustomers().SingleOrDefault(c => c.Id == id);
+            var customer = _context.Customers.Include(p=> p.MembershipType).SingleOrDefault(c => c.Id == id);
             if (customer == null)
             {
                 return HttpNotFound();
@@ -27,13 +56,6 @@ namespace Vidly2.Controllers
                 return View(customer);
         }
 
-        private IEnumerable<Customer> GetCustomers()
-        {
-            return new List<Customer>
-            {
-                new Customer {Id = 1, Name = "Jon Snow" },
-                new Customer {Id = 2, Name = "Daenerys Targeryen" }
-            };
-        }
+        
     }
 }

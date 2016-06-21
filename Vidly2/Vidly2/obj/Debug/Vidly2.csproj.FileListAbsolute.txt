@@ -99,3 +99,15 @@ C:\Users\Cdi07\Desktop\GitHub\MvcTest\Vidly2\Vidly2\bin\fr\Microsoft.Owin.Securi
 C:\Users\Cdi07\Desktop\GitHub\MvcTest\Vidly2\Vidly2\obj\Debug\Vidly2.csprojResolveAssemblyReference.cache
 C:\Users\Cdi07\Desktop\GitHub\MvcTest\Vidly2\Vidly2\obj\Debug\Vidly2.dll
 C:\Users\Cdi07\Desktop\GitHub\MvcTest\Vidly2\Vidly2\obj\Debug\Vidly2.pdb
+C:\Users\Cdi07\Desktop\GitHub\MvcTest\Vidly2\Vidly2\obj\Debug\Vidly2.Migrations.InitialModel.resources
+C:\Users\Cdi07\Desktop\GitHub\MvcTest\Vidly2\Vidly2\obj\Debug\Vidly2.csproj.GenerateResource.Cache
+C:\Users\Cdi07\Desktop\GitHub\MvcTest\Vidly2\Vidly2\obj\Debug\Vidly2.Migrations.PopulateMembershipTypes.resources
+C:\Users\Cdi07\Desktop\GitHub\MvcTest\Vidly2\Vidly2\obj\Debug\Vidly2.Migrations.AddPropertyNameToMembership.resources
+C:\Users\Cdi07\Desktop\GitHub\MvcTest\Vidly2\Vidly2\obj\Debug\Vidly2.Migrations.PopulateNameOfMembershipTypes.resources
+C:\Users\Cdi07\Desktop\GitHub\MvcTest\Vidly2\Vidly2\obj\Debug\Vidly2.Migrations.AddDateOfBirthToCustomer.resources
+C:\Users\Cdi07\Desktop\GitHub\MvcTest\Vidly2\Vidly2\obj\Debug\Vidly2.Migrations.GenreTableAndNewPropertyOnMovies.resources
+C:\Users\Cdi07\Desktop\GitHub\MvcTest\Vidly2\Vidly2\obj\Debug\Vidly2.Migrations.PopulateGenre.resources
+C:\Users\Cdi07\Desktop\GitHub\MvcTest\Vidly2\Vidly2\obj\Debug\Vidly2.Migrations.PopulateMovies.resources
+C:\Users\Cdi07\Desktop\GitHub\MvcTest\Vidly2\Vidly2\obj\Debug\Vidly2.Migrations.UpdateDateAdded.resources
+C:\Users\Cdi07\Desktop\GitHub\MvcTest\Vidly2\Vidly2\obj\Debug\Vidly2.Migrations.UpdateMovies.resources
+C:\Users\Cdi07\Desktop\GitHub\MvcTest\Vidly2\Vidly2\obj\Debug\Vidly2.Migrations.UpdateModel.resources
