@@ -250,6 +250,10 @@
     <Compile Include="Migrations\201606211258242_UpdateModel.Designer.cs">
       <DependentUpon>201606211258242_UpdateModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201606221132314_SomeUpdate.cs" />
+    <Compile Include="Migrations\201606221132314_SomeUpdate.Designer.cs">
+      <DependentUpon>201606221132314_SomeUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Biquette.cs" />
@@ -266,7 +270,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
-    <Compile Include="Views\ViewModels\NewCustomerViewModel.cs" />
+    <Compile Include="Views\ViewModels\CustomerFormViewModel.cs" />
+    <Compile Include="Views\ViewModels\MoviesFormViewModel.cs" />
     <Compile Include="Views\ViewModels\RandomMovieViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -340,8 +345,9 @@
     <Content Include="Views\Shared\_NavBar.cshtml" />
     <Content Include="Views\Movies\Random.cshtml" />
     <Content Include="Views\Movies\Details.cshtml" />
-    <Content Include="Views\Customers\New.cshtml" />
+    <Content Include="Views\Customers\CustomerForm.cshtml" />
     <Content Include="Views\Biquette\Index.cshtml" />
+    <Content Include="Views\Movies\MovieForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -389,6 +395,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201606211258242_UpdateModel.resx">
       <DependentUpon>201606211258242_UpdateModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606221132314_SomeUpdate.resx">
+      <DependentUpon>201606221132314_SomeUpdate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

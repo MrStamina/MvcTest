@@ -1,0 +1,35 @@
+﻿@model Vidly2.Views.ViewModels.CustomerFormViewModel
+@{
+    ViewBag.Title = "New";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Nouveau Client</h2>
+@using (Html.BeginForm("Save", "Customers"))
+{
+    <div class="form-group">
+        <label for="Name">Nom</label>
+        @Html.TextBoxFor(m => m.Customer.Name, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m=>m.Customer.Name)
+    </div>
+    <div class="form-group">
+        <label for="DateOfBirth">Date de Naissance</label>
+        @Html.TextBoxFor(m => m.Customer.DateOfBirth, "{0:d MMM yyyy}", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m=>m.Customer.DateOfBirth)
+    </div>
+   
+    
+    <div class="form-group">
+        <label for="MembershipTypeId">Type d'abonnement</label>
+        @Html.DropDownListFor(m=>m.Customer.MembershipTypeId, new SelectList(Model.MembershipTypes,"Id", "Name"), "Selectionnez le type d'abonnement", new {@class = "form-control"})
+        @Html.ValidationMessageFor(m=>m.Customer.MembershipTypeId)
+    </div>
+    <div class="checkbox">
+        <label>
+            @Html.CheckBoxFor(m => m.Customer.IsSubscribedToNewsletter) Inscription à la newsletter ?
+        </label>
+    </div>
+    @Html.HiddenFor(m =>m.Customer.Id)
+    <button type="submit" class="btn btn-primary">Enregistrer</button>
+}
+
