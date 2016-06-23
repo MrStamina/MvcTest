@@ -7,6 +7,7 @@
 <h2>Nouveau Client</h2>
 @using (Html.BeginForm("Save", "Customers"))
 {
+    @*@Html.ValidationSummary(true,"Veuillez corriger les erreurs suivantes")*@
     <div class="form-group">
         <label for="Name">Nom</label>
         @Html.TextBoxFor(m => m.Customer.Name, new { @class = "form-control" })
@@ -30,6 +31,11 @@
         </label>
     </div>
     @Html.HiddenFor(m =>m.Customer.Id)
+    @Html.AntiForgeryToken()
     <button type="submit" class="btn btn-primary">Enregistrer</button>
+}
+@section scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
 }
 

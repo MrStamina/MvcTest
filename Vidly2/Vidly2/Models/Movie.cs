@@ -19,7 +19,8 @@ namespace Vidly2.Models
         public DateTime ReleaseDate { get; set; }
         public DateTime DateAdded { get; set; }
 
-        [Required(ErrorMessage ="Veuillez indiquer la quantité en stock")]
+        [Required]
+        [Range(1,20, ErrorMessage ="La quantité doit être comprise entre 1 et 20")]
         public int Stock { get; set; }
 
         public Genre Genre { get; set; }

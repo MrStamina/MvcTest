@@ -14,7 +14,8 @@ namespace Vidly2.Models
         [Required(ErrorMessage ="Le nom est obligatoire") ]
         [StringLength(75,ErrorMessage ="Le nom est trop long")]
         public string Name { get; set; }
-        [Required(ErrorMessage ="Veuillez indiquer votre date de naissance")]
+        [Required(ErrorMessage = "Veuillez indiquer votre date de naissance")]
+        [Min18YearsIfAMember]
         public DateTime DateOfBirth { get; set; }
         [Required(ErrorMessage ="Veuillez cocher la case")]
         public bool IsSubscribedToNewsletter { get; set; }
@@ -22,5 +23,7 @@ namespace Vidly2.Models
         public MembershipTypes MembershipType { get; set; }
         [Required(ErrorMessage ="Choisissez le type d'abonnement")]
         public byte MembershipTypeId { get; set; }
+
+       
     }
 }

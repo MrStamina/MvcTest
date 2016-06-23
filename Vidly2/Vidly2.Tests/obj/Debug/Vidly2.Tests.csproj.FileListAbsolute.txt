@@ -69,3 +69,9 @@ C:\Users\Cdi07\Desktop\GitHub\MvcTest\Vidly2\Vidly2.Tests\bin\Debug\fr\Microsoft
 C:\Users\Cdi07\Desktop\GitHub\MvcTest\Vidly2\Vidly2.Tests\obj\Debug\Vidly2.Tests.csprojResolveAssemblyReference.cache
 C:\Users\Cdi07\Desktop\GitHub\MvcTest\Vidly2\Vidly2.Tests\obj\Debug\Vidly2.Tests.dll
 C:\Users\Cdi07\Desktop\GitHub\MvcTest\Vidly2\Vidly2.Tests\obj\Debug\Vidly2.Tests.pdb
+C:\Users\Cdi07\Desktop\GitHub\MvcTest\Vidly2\Vidly2.Tests\bin\Debug\System.Web.Http.dll
+C:\Users\Cdi07\Desktop\GitHub\MvcTest\Vidly2\Vidly2.Tests\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\Cdi07\Desktop\GitHub\MvcTest\Vidly2\Vidly2.Tests\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Cdi07\Desktop\GitHub\MvcTest\Vidly2\Vidly2.Tests\bin\Debug\System.Web.Http.xml
+C:\Users\Cdi07\Desktop\GitHub\MvcTest\Vidly2\Vidly2.Tests\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\Cdi07\Desktop\GitHub\MvcTest\Vidly2\Vidly2.Tests\bin\Debug\System.Net.Http.Formatting.xml

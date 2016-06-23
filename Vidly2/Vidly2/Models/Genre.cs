@@ -12,5 +12,7 @@ namespace Vidly2.Models
 
         [Required, StringLength(50)]
         public string Libelle { get; set; }
+
+        public static readonly byte Unknown = 0;
     }
 }
