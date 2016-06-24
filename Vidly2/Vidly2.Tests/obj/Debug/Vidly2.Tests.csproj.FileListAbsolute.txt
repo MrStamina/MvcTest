@@ -75,3 +75,5 @@ C:\Users\Cdi07\Desktop\GitHub\MvcTest\Vidly2\Vidly2.Tests\bin\Debug\System.Net.H
 C:\Users\Cdi07\Desktop\GitHub\MvcTest\Vidly2\Vidly2.Tests\bin\Debug\System.Web.Http.xml
 C:\Users\Cdi07\Desktop\GitHub\MvcTest\Vidly2\Vidly2.Tests\bin\Debug\System.Web.Http.WebHost.xml
 C:\Users\Cdi07\Desktop\GitHub\MvcTest\Vidly2\Vidly2.Tests\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Cdi07\Desktop\GitHub\MvcTest\Vidly2\Vidly2.Tests\bin\Debug\AutoMapper.dll
+C:\Users\Cdi07\Desktop\GitHub\MvcTest\Vidly2\Vidly2.Tests\bin\Debug\AutoMapper.xml
